@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101b25" />
+  <title>CivicFlow — Your next step, made clear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="CivicFlow home"><span class="brand-mark">C</span><span>CivicFlow<small>SMALL BUSINESS SUPPORT</small></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <button class="nav-item active" data-view="overview"><span>◫</span> Overview</button>
+      <button class="nav-item" data-view="schemes"><span>⌕</span> Find schemes</button>
+      <button class="nav-item" data-view="checklist"><span>☑</span> My checklist</button>
+      <button class="nav-item" data-view="documents"><span>▤</span> Application prep</button>
+      <div class="sidebar-note"><div class="note-icon">✦</div><strong>One clear next step.</strong><p>Spend less time searching portals and more time moving your business forward.</p></div>
+      <div class="sidebar-footer"><span class="status-dot"></span> Prototype mode <span class="demo-pill">DEMO</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">C</span> CivicFlow</div>
+        <div class="breadcrumb">Workspace <span>/</span> <b id="crumb">Overview</b></div>
+        <div class="top-actions"><span class="region-chip">Andhra Pradesh</span><button class="avatar" aria-label="Demo profile">B</button></div>
+      </header>
+
+      <section class="view active" id="overview-view">
+        <div class="welcome-row">
+          <div><p class="eyebrow">YOUR BUSINESS, ONE STEP AT A TIME</p><h1>Good day, business owner<span class="accent">.</span></h1><p class="muted">A clearer path to schemes, compliance, and your next move.</p></div>
+          <div class="date-chip"><span>●</span> Your support dashboard</div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-copy"><div class="hero-tag">✦ YOUR NEXT STEP</div><h2>Turn confusing processes<br/>into a simple action plan.</h2><p>Explore relevant support schemes, keep track of tasks, and prepare before visiting official portals.</p><button class="primary-btn" data-go="schemes">Explore schemes <span>↗</span></button></div>
+          <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-card card-back">SCHEME MATCH <b>03</b></div><div class="art-card card-front"><span class="mini-check">✓</span><div><small>NEXT ACTION</small><strong>Review eligibility</strong><p>Step 1 of 3</p></div></div><div class="art-spark">✦</div></div>
+        </div>
+        <div class="section-heading"><div><p class="eyebrow">YOUR OVERVIEW</p><h2>Progress at a glance</h2></div><button class="text-btn" data-go="checklist">View checklist →</button></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-icon violet">⌕</div><p>Potential scheme matches</p><strong>03</strong><small>Based on demo profile</small></article>
+          <article class="stat-card"><div class="stat-icon mint">✓</div><p>Checklist completed</p><strong id="overview-progress">0/5</strong><div class="progress-track"><span id="overview-bar"></span></div></article>
+          <article class="stat-card"><div class="stat-icon amber">▤</div><p>Preparation items</p><strong id="overview-docs">0/4</strong><small>Mark items as you prepare</small></article>
+        </div>
+        <div class="lower-grid">
+          <article class="panel"><div class="panel-head"><div><p class="eyebrow">RECOMMENDED START</p><h3>Start with the essentials</h3></div><span class="panel-symbol">↗</span></div><div class="action-list"><button class="action-row" data-go="schemes"><span class="action-number">01</span><span><b>Explore support schemes</b><small>See example programmes and official sources</small></span><span class="arrow">→</span></button><button class="action-row" data-go="checklist"><span class="action-number">02</span><span><b>Build your task checklist</b><small>Keep track of what you have prepared</small></span><span class="arrow">→</span></button><button class="action-row" data-go="documents"><span class="action-number">03</span><span><b>Prepare before you apply</b><small>Organise common information and documents</small></span><span class="arrow">→</span></button></div></article>
+          <article class="panel insight-panel"><div class="insight-icon">✧</div><p class="eyebrow">CIVICFLOW PRINCIPLE</p><h3>Guidance first.<br/>Official application always.</h3><p class="muted">CivicFlow helps you get organised. Confirm current eligibility and submit applications only through verified government websites.</p><a href="https://www.udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer" class="inline-link">Visit Udyam Registration ↗</a></article>
+        </div>
+        <p class="disclaimer">Demo prototype · Scheme examples are for demonstration only. Availability and eligibility can change; verify details with the official department.</p>
+      </section>
+
+      <section class="view" id="schemes-view">
+        <div class="page-intro"><p class="eyebrow">DISCOVER SUPPORT</p><h1>Find a place to start<span class="accent">.</span></h1><p class="muted">Explore illustrative support pathways and follow the official source for current details.</p></div>
+        <div class="filter-panel"><label for="business-type">I run a</label><select id="business-type"><option value="all">Any small business</option><option value="manufacturing">Manufacturing business</option><option value="service">Service business</option><option value="startup">Startup / early-stage venture</option></select><label for="scheme-search">Search</label><input id="scheme-search" type="search" placeholder="Search schemes or topics…" /></div>
+        <div class="results-meta"><span id="scheme-count">3 pathways</span><span class="demo-pill">ILLUSTRATIVE MATCHES</span></div>
+        <div class="scheme-grid" id="scheme-grid">
+          <article class="scheme-card" data-category="all manufacturing service" data-search="udyam msme registration small business"><div class="scheme-top"><span class="scheme-icon lavender">↗</span><span class="type-label">REGISTRATION</span></div><h3>Udyam Registration</h3><p>Explore official MSME registration information and check the current process for your enterprise.</p><div class="scheme-tags"><span>MSME</span><span>Business identity</span></div><a class="scheme-link" href="https://udyamregistration.gov.in/" target="_blank" rel="noopener noreferrer">Open official portal ↗</a></article>
+          <article class="scheme-card" data-category="all manufacturing service startup" data-search="ministry msme schemes support credit technology training"><div class="scheme-top"><span class="scheme-icon mint">✦</span><span class="type-label">SUPPORT DISCOVERY</span></div><h3>Ministry of MSME</h3><p>Browse government programmes and resources that may support micro, small, and medium enterprises.</p><div class="scheme-tags"><span>Government schemes</span><span>MSME</span></div><a class="scheme-link" href="https://msme.gov.in/" target="_blank" rel="noopener noreferrer">Explore official website ↗</a></article>
+          <article class="scheme-card" data-category="all startup service" data-search="startup india innovation startup learning schemes"><div class="scheme-top"><span class="scheme-icon amber">⌁</span><span class="type-label">STARTUP SUPPORT</span></div><h3>Startup India</h3><p>Review startup resources, learning material, and official information about support pathways.</p><div class="scheme-tags"><span>Startups</span><span>Innovation</span></div><a class="scheme-link" href="https://www.startupindia.gov.in/" target="_blank" rel="noopener noreferrer">Explore official website ↗</a></article>
+          <article class="scheme-card" data-category="all manufacturing service" data-search="msme samadhaan delayed payment grievance"><div class="scheme-top"><span class="scheme-icon rose">◎</span><span class="type-label">BUSINESS SUPPORT</span></div><h3>MSME Samadhaan</h3><p>Find official information on the delayed-payment facilitation process for eligible micro and small enterprises.</p><div class="scheme-tags"><span>Payments</span><span>MSME</span></div><a class="scheme-link" href="https://samadhaan.msme.gov.in/" target="_blank" rel="noopener noreferrer">Open official portal ↗</a></article>
+          <article class="scheme-card" data-category="all startup service manufacturing" data-search="champions ministry msme grievance assistance"><div class="scheme-top"><span class="scheme-icon blue">✧</span><span class="type-label">GUIDANCE</span></div><h3>CHAMPIONS Portal</h3><p>Find the official MSME support and grievance guidance channel and check its current services.</p><div class="scheme-tags"><span>Guidance</span><span>MSME</span></div><a class="scheme-link" href="https://champions.gov.in/" target="_blank" rel="noopener noreferrer">Open official portal ↗</a></article>
+          <article class="scheme-card" data-category="all manufacturing" data-search="gst registration tax compliance official portal"><div class="scheme-top"><span class="scheme-icon mint">✓</span><span class="type-label">COMPLIANCE</span></div><h3>GST Portal</h3><p>Use the official GST portal to review registration, return, and taxpayer services relevant to your situation.</p><div class="scheme-tags"><span>Tax</span><span>Compliance</span></div><a class="scheme-link" href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer">Open official portal ↗</a></article>
+        </div>
+        <div class="empty-state hidden" id="empty-state">No matches for that search. Try a broader keyword.</div>
+        <p class="disclaimer">These are starting points, not confirmed eligibility recommendations. CivicFlow does not currently verify live scheme rules or submit applications.</p>
+      </section>
+
+      <section class="view" id="checklist-view">
+        <div class="page-intro"><p class="eyebrow">STAY ORGANISED</p><h1>Your progress checklist<span class="accent">.</span></h1><p class="muted">Use this editable checklist to track preparation tasks. Your changes are saved in this browser.</p></div>
+        <div class="checklist-summary panel"><div><p class="eyebrow">PREPARATION PROGRESS</p><h2 id="checklist-count">0 of 5 completed</h2><p class="muted">Tick off each step when you are ready.</p></div><div class="big-progress"><svg viewBox="0 0 100 100" aria-label="Progress"><circle class="ring-bg" cx="50" cy="50" r="42"></circle><circle class="ring-fill" id="progress-ring" cx="50" cy="50" r="42"></circle></svg><strong id="progress-percent">0%</strong></div></div>
+        <div class="task-list panel" id="task-list">
+          <label class="task-row"><input type="checkbox" data-task="0"><span class="fake-check"></span><span><b>Describe your business activity</b><small>Write down what you sell or what service you provide.</small></span><span class="task-category">PROFILE</span></label>
+          <label class="task-row"><input type="checkbox" data-task="1"><span class="fake-check"></span><span><b>Check official registration information</b><small>Review Udyam and other relevant official requirements.</small></span><span class="task-category">REGISTRATION</span></label>
+          <label class="task-row"><input type="checkbox" data-task="2"><span class="fake-check"></span><span><b>List possible support pathways</b><small>Save official links and note questions about eligibility.</small></span><span class="task-category">SCHEMES</span></label>
+          <label class="task-row"><input type="checkbox" data-task="3"><span class="fake-check"></span><span><b>Organise relevant business records</b><small>Keep documents securely in your own storage.</small></span><span class="task-category">DOCUMENTS</span></label>
+          <label class="task-row"><input type="checkbox" data-task="4"><span class="fake-check"></span><span><b>Confirm details with an official source</b><small>Verify deadlines, eligibility, and current application steps.</small></span><span class="task-category">VERIFY</span></label>
+        </div>
+        <div class="button-row"><button class="secondary-btn" id="reset-checklist">Reset checklist</button><span class="save-note" id="save-note">✓ Saved in this browser</span></div>
+      </section>
+
+      <section class="view" id="documents-view">
+        <div class="page-intro"><p class="eyebrow">BEFORE YOU APPLY</p><h1>Get application-ready<span class="accent">.</span></h1><p class="muted">A general preparation list to help you get organised before using a government portal.</p></div>
+        <div class="privacy-banner"><span>♧</span><div><b>Your sensitive data stays with you.</b><p>Do not enter Aadhaar, PAN, bank details, passwords, or private documents into this demo. This prototype does not upload your information.</p></div></div>
+        <div class="document-layout"><div class="panel"><div class="panel-head"><div><p class="eyebrow">PREPARATION LIST</p><h3>Items to review</h3></div><span class="type-label" id="doc-progress">0/4 READY</span></div><div class="doc-list"><label class="doc-row"><input type="checkbox" data-doc="0"><span class="fake-check"></span><span><b>Business description</b><small>A short, clear summary of your activity</small></span></label><label class="doc-row"><input type="checkbox" data-doc="1"><span class="fake-check"></span><span><b>Business registration details</b><small>Review what the selected official process asks for</small></span></label><label class="doc-row"><input type="checkbox" data-doc="2"><span class="fake-check"></span><span><b>Financial and business records</b><small>Check the specific programme's official requirements</small></span></label><label class="doc-row"><input type="checkbox" data-doc="3"><span class="fake-check"></span><span><b>Questions for an advisor or department</b><small>Note eligibility, deadlines, and next steps to confirm</small></span></label></div></div>
+          <div class="panel guide-panel"><div class="guide-icon">✦</div><p class="eyebrow">A SIMPLE WORKFLOW</p><h3>Prepare → Verify → Apply</h3><ol><li><b>Prepare</b><span>Organise information and questions.</span></li><li><b>Verify</b><span>Check the latest rules on an official source.</span></li><li><b>Apply</b><span>Submit only through the relevant official portal.</span></li></ol><a class="inline-link" href="https://msme.gov.in/" target="_blank" rel="noopener noreferrer">Visit Ministry of MSME ↗</a></div></div>
+        <p class="disclaimer">The exact documents depend on the scheme, business type, and current rules. This checklist is generic and is not legal, tax, or financial advice.</p>
+      </section>
+      <footer class="footer"><span>© 2026 CivicFlow · Student prototype</span><span>Built for clarity, designed for access.</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
